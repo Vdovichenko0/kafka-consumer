@@ -18,7 +18,7 @@ public class KafkaConsumerApplication {
 
 	@Bean
 	Consumer<PulseDto> log(){
-		return p -> System.out.println(p);
+		return t -> System.out.println(t);
 //		return new Consumer<String>() {
 //			
 //			@Override
